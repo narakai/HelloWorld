@@ -4,14 +4,16 @@
 import React, {Component} from 'react';
 import Title from "./Title";
 
-class WarningTitle extends Title{
-    render(){
+export class WarningTitle extends Title {
+    render() {
         return (
             <div style={{border: '1px solid red'}}>
-                <Title/>
+                <Title
+                    titleText={this.props.titleText}
+                />
             </div>
         )
     }
 }
 
-export default WarningTitle;
+module.exports = WarningTitle;

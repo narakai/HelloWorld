@@ -11,18 +11,19 @@ import {
     Text,
     View
 } from 'react-native';
-import Title from "./src/Title";
+
+var Title = require('./src/Title');
 
 export default class HelloWorld extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <View>
+                <h1>TITLE</h1>
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>
-                <Title/>
+                <Title titleText="Custom module"/>
             </View>
-
         );
     }
 }

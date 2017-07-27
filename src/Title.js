@@ -3,7 +3,7 @@
  */
 import React, {Component, PropTypes} from 'react';
 
-class Title extends Component {
+export class Title extends Component {
     render() {
         return (
             <h1 style={{
@@ -13,7 +13,6 @@ class Title extends Component {
                 {this.props.titleText}
                 /*{this.props.children}*/
             </h1>
-
         )
     }
 }
@@ -30,5 +29,4 @@ Title.defaultProps = {
     fontSize: 18
 };
 
-
-export default Title;
+module.exports = Title;

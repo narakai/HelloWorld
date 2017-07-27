@@ -5,7 +5,7 @@ import React, {Component, PropTypes} from 'react';
 import Title from "./Title";
 import {Image} from "react-native";
 
-class NewsItem extends Component {
+export class NewsItem extends Component {
     render() {
         return (
             <div className="news-item">
@@ -24,4 +24,4 @@ NewsItem.propTypes = {
     titleText: PropTypes.string.isRequired
 };
 
-export default NewsItem;
+module.exports = NewsItem;
