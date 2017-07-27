@@ -15,8 +15,7 @@ import {
 export default class HelloWorld extends Component {
     render() {
         return (
-            <View>
-                <h1>TITLE</h1>
+            <View style={styles.container}>
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: 'orange',
     },
     welcome: {
         fontSize: 20,
