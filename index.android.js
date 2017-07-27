@@ -24,6 +24,9 @@ export default class HelloWorld extends Component {
                 <TouchableHighlight
                     style={[buttonStyles.core, buttonStyles.hairlineBorder,
                         buttonStyles.spacer]}
+                    underlayColor="#60b044cc"
+                    activeOpacity={0.8}
+                    onPress={() => {}}
                 >
                     <Text>Default Hairline</Text>
                 </TouchableHighlight>
