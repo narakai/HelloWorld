@@ -12,8 +12,6 @@ import {
     View
 } from 'react-native';
 
-var Title = require('./src/Title');
-
 export default class HelloWorld extends Component {
     render() {
         return (
@@ -22,7 +20,6 @@ export default class HelloWorld extends Component {
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>
-                <Title titleText="Custom module"/>
             </View>
         );
     }

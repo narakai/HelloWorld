@@ -3,7 +3,7 @@
  */
 import React, {Component, PropTypes} from 'react';
 
-export class Title extends Component {
+export default class Title extends Component {
     render() {
         return (
             <h1 style={{
@@ -28,5 +28,3 @@ Title.defaultProps = {
     highlighted: false,
     fontSize: 18
 };
-
-module.exports = Title;

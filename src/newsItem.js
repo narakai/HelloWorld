@@ -2,10 +2,10 @@
  * Created by laileon on 2017/7/26.
  */
 import React, {Component, PropTypes} from 'react';
-import Title from "./Title";
+import Title from "./title";
 import {Image} from "react-native";
 
-export class NewsItem extends Component {
+export default class NewsItem extends Component {
     render() {
         return (
             <div className="news-item">
@@ -23,5 +23,3 @@ export class NewsItem extends Component {
 NewsItem.propTypes = {
     titleText: PropTypes.string.isRequired
 };
-
-module.exports = NewsItem;
