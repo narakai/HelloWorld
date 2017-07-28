@@ -11,6 +11,7 @@ import {
     Text, TouchableHighlight,
     View
 } from 'react-native';
+import BoxModel from "./src/BoxModel";
 
 export default class HelloWorld extends Component {
     render() {
@@ -24,7 +25,7 @@ export default class HelloWorld extends Component {
                 <TouchableHighlight
                     style={[buttonStyles.core, buttonStyles.hairlineBorder,
                         buttonStyles.spacer]}
-                    underlayColor="#60b044cc"
+                    underlayColor="#30abaaaa"
                     activeOpacity={0.8}
                     onPress={() => {}}
                 >
@@ -41,6 +42,8 @@ export default class HelloWorld extends Component {
                 >
                     <Text>Primary Hairline</Text>
                 </TouchableHighlight>
+
+                <BoxModel/>
             </View>
         );
     }
