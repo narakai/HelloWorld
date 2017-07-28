@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import {
-    AppRegistry,
+    AppRegistry, Image,
     StyleSheet,
     Text, TouchableHighlight,
     View
 } from 'react-native';
+
+const pizzaImage = require('./img/pizza.jpg');
 
 export default class BoxModel extends Component {
     render() {
@@ -12,6 +14,7 @@ export default class BoxModel extends Component {
             <View style={styles.main}>
                 <Text style={styles.content}>Column 1</Text>
                 <Text style={styles.content}>Column 2</Text>
+                <Image style={[{ width: 150, height: 350 }, {resizeMode: 'center'}]} source={pizzaImage} />
             </View>);
     }
 }
@@ -21,7 +24,6 @@ const styles = StyleSheet.create({
     main: {
         paddingVertical: 20,
         flexDirection: 'column',
-        flexWrap: 'wrap'
     }, content: {
         padding: 20,
         margin: 10,
