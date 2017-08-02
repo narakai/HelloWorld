@@ -7,8 +7,6 @@
 import React, {Component} from 'react';
 import {AppRegistry, SectionList, StyleSheet, Text, View} from 'react-native';
 
-const pizzaImage = require('./src/img/pizza.jpg');
-
 export default class HelloWorld extends Component {
     render() {
         return (
