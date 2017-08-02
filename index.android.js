@@ -5,45 +5,28 @@
  */
 
 import React, {Component} from 'react';
-import {AppRegistry, ScrollView, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
-import BoxModel from "./src/BoxModel";
+import {AppRegistry, FlatList, StyleSheet, Text, View} from 'react-native';
 
 const pizzaImage = require('./src/img/pizza.jpg');
 
 export default class HelloWorld extends Component {
     render() {
         return (
-            <ScrollView>
-                <View style={viewStyles}>
-                    <TouchableHighlight
-                        style={[buttonStyles.core, buttonStyles.spacer]}
-                    >
-                        <Text>Default Normal</Text>
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        style={[buttonStyles.core, buttonStyles.hairlineBorder,
-                            buttonStyles.spacer]}
-                        underlayColor="#30abaaaa"
-                        activeOpacity={0.8}
-                        onPress={() => {
-                        }}
-                    >
-                        <Text>Default Hairline</Text>
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        style={[buttonStyles.core, buttonStyles.primary, buttonStyles.spacer]}
-                    >
-                        <Text>Primary Normal</Text>
-                    </TouchableHighlight>
-                    <TouchableHighlight
-                        style={[buttonStyles.core, buttonStyles.primary,
-                            buttonStyles.hairlineBorder]}
-                    >
-                        <Text>Primary Hairline</Text>
-                    </TouchableHighlight>
-                    <BoxModel/>
-                </View>
-            </ScrollView>
+            <View style={styles.container}>
+                <FlatList
+                    data={[
+                        {key: 'Devin'},
+                        {key: 'Jackson'},
+                        {key: 'James'},
+                        {key: 'Joel'},
+                        {key: 'John'},
+                        {key: 'Jillian'},
+                        {key: 'Jimmy'},
+                        {key: 'Julie'},
+                    ]}
+                    renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+                />
+            </View>
         );
     }
 }
