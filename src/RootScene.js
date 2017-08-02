@@ -1,6 +1,7 @@
 import NavigationBar from 'react-native-navbar'
 import React, {Component} from 'react';
-import {SectionList, StyleSheet, Text, View,} from 'react-native'
+import {Image, SectionList, StyleSheet, Text, View,} from 'react-native'
+import MyButton from "./MyButton";
 
 /**
  * Sample React Native App
@@ -33,6 +34,9 @@ export default class RootScene extends Component {
                     style={{backgroundColor: "rgb(80,227,194)",}}
                     statusBar={{tintColor: "rgb(74,144,226)",}}
                 />
+                <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
+                       style={{height: 100}}/>
+                <MyButton title="Button"/>
                 <SectionList
                     sections={[
                         {key: 'D', data: ['Devin']},
