@@ -10,7 +10,7 @@ import React, {PropTypes, PureComponent} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native'
 
 // create a component
-class MyButton extends PureComponent {
+export default class MyButton extends PureComponent {
 
     static propTypes = {
         onPress: PropTypes.func,
@@ -51,6 +51,3 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
 });
-
-//make this component available to the app
-export default MyButton;
